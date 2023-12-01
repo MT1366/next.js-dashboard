@@ -2,6 +2,7 @@ import React from "react";
 import SideBar from "../ui/dashboard/sidebar/sidebar";
 import Navbar from "../ui/dashboard/navbar/navbar";
 import styles from "../ui/dashboard/dashboard.module.css";
+import Footer from "../ui/dashboard/footer/footer";
 
 export default function LayOut({ children }) {
   return (
@@ -12,6 +13,7 @@ export default function LayOut({ children }) {
       <div className={styles.content}>
         <Navbar />
         {children}
+        <Footer />
       </div>
     </div>
   );
