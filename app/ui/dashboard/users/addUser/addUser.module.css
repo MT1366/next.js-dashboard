@@ -16,7 +16,7 @@
 .form select {
   padding: 30px;
   color: var(--text);
-  background-color: transparent;
+  background-color: var(--bg);
   border-radius: 5px;
   margin-bottom: 30px;
   border: 2px solid #2e374a;
@@ -27,7 +27,7 @@
   width: 45%;
 }
 
-.form select {
+.form textarea {
   width: 100%;
 }
 
