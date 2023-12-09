@@ -6,9 +6,9 @@ import Image from "next/image";
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
 import { fetchUsers } from "@/app/lib/data";
 
-const UsersPage = async() {
+const UsersPage = async () => {
   const users = await fetchUsers();
-  console.log(users)
+  console.log(users);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -67,6 +67,6 @@ const UsersPage = async() {
       <Pagination />
     </div>
   );
-}
+};
 
 export default UsersPage;
