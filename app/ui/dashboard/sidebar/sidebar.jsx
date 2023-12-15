@@ -81,14 +81,13 @@ const menuItems = [
 
 export default function NestedList() {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <div className={styles.container}>
       <div className={styles.user}>
         <Image
           className={styles.userImage}
-          src="/IMG_7570.JPG"
+          src="/noavatar.png"
           width="50"
           height="20"
         />

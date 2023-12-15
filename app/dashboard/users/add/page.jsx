@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "@/app/ui/dashboard/users/addUser/addUser.module.css";
+import { addUser } from "@/app/lib/actions";
 
 export default function AppUsersPage() {
   return (
     <div className={styles.container}>
-      <form className={styles.form}>
+      <form action={addUser} className={styles.form}>
         <input type="text" placeholder="username" name="username" required />
         <input type="email" placeholder="email" name="email" required />
         <input
@@ -15,16 +16,12 @@ export default function AppUsersPage() {
         />
         <input type="phone" placeholder="phone" name="phone" />
         <select name="isAdmin" id="isAdmin">
-          <option value={false} selected>
-            Is Admin?
-          </option>
+          <option value={false}>Is Admin?</option>
           <option value={true}>Yes</option>
           <option value={false}>No</option>
         </select>
         <select name="isActive" id="isActive">
-          <option value={true} selected>
-            Is Active?
-          </option>
+          <option value={true}>Is Active?</option>
           <option value={true}>Yes</option>
           <option value={false}>No</option>
         </select>
