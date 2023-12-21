@@ -5,9 +5,9 @@
 
 .item {
   background: linear-gradient(to top, #182237, #253352);
-  padding: 20px 24px;
+  padding: 5px 8px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -27,7 +27,7 @@
 .text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .notification {

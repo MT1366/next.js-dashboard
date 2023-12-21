@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./card.module.css";
+import { HiMiniChartBar } from "react-icons/hi2";
 
 export default function Card() {
   return (
     <div className={styles.container}>
-      <p>ICON</p>
+      <HiMiniChartBar />
       <div className={styles.texts}>
         <span className={styles.title}>Total Users</span>
         <span className={styles.number}>10.723</span>

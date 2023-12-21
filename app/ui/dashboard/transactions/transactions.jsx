@@ -20,7 +20,7 @@ export default function Transactions() {
             <td>
               <div className={styles.user}>
                 <Image
-                  src="/IMG_7570.JPG"
+                  src="/noavatar.png"
                   alt=""
                   width={40}
                   height={20}
@@ -41,7 +41,7 @@ export default function Transactions() {
             <td>
               <div className={styles.user}>
                 <Image
-                  src="/IMG_7570.JPG"
+                  src="/noavatar.png"
                   alt=""
                   width={40}
                   height={20}
@@ -60,7 +60,7 @@ export default function Transactions() {
             <td>
               <div className={styles.user}>
                 <Image
-                  src="/IMG_7570.JPG"
+                  src="/noavatar.png"
                   alt=""
                   width={40}
                   height={20}

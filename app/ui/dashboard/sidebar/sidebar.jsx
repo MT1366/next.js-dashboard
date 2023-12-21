@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import styles from "./sidebar.module.css";
 
@@ -15,6 +14,7 @@ import { HiMiniChatBubbleLeftEllipsis } from "react-icons/hi2";
 import { HiMiniArrowLeftOnRectangle } from "react-icons/hi2";
 import { usePathname } from "next/navigation";
 import Dashboard from "@/app/dashboard/page";
+// import { auth, signOut } from "@/app/auth";
 
 const menuItems = [
   {
@@ -79,20 +79,19 @@ const menuItems = [
   },
 ];
 
-export default function NestedList() {
-  const pathname = usePathname();
-
+export default async function NestedList() {
+  // const { user } = await auth();
   return (
     <div className={styles.container}>
       <div className={styles.user}>
         <Image
           className={styles.userImage}
-          src="/noavatar.png"
+          src={"/noavatar.png"}
           width="50"
           height="20"
         />
         <div className={styles.userDetail}>
-          <span className={styles.userName}>John Doe</span>
+          <span className={styles.userName}>Milad</span>
           <span className={styles.userTitle}>Administrator</span>
         </div>
       </div>
@@ -106,10 +105,17 @@ export default function NestedList() {
           </li>
         ))}
       </ul>
-      <button className={styles.logOut}>
-        <p>ICON</p>
-        Logout
-      </button>
+      <form
+      // action={async () => {
+      //   "use server";
+      //   await signOut();
+      // }}
+      >
+        <button className={styles.logOut}>
+          <HiMiniArrowLeftOnRectangle />
+          Logout
+        </button>
+      </form>
     </div>
   );
 }
